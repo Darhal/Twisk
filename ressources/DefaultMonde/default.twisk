@@ -1,0 +1,43 @@
+{
+	TYPE: ENTREE;
+	DELAI: 10.0;
+	ECART_TEMP: 2.0;
+	NOM: Balade au Zoo;
+	X: 38.0;
+	Y: 333.0;
+	SIZE_X: 150.0;
+	SIZE_Y: 35.0;
+	SUCC: [(NEXT: Access Toboggan | SRC_P_ID: 1 | DEST_P_ID: 0 | ARC_TYPE: COURBE | V1: 310.0 - 309.0 | V2: 312.0 - 378.0)];
+}
+{
+	TYPE: SERVICE;
+	NB_JETONS: 2;
+	NOM: Access Toboggan;
+	X: 383.0;
+	Y: 343.0;
+	SIZE_X: 200.0;
+	SIZE_Y: 17.0;
+	SUCC: [(NEXT: Toboggan | SRC_P_ID: 1 | DEST_P_ID: 0 | ARC_TYPE: LIGNE | )];
+}
+{
+	TYPE: ACTIVITE;
+	DELAI: 3.0;
+	ECART_TEMP: 1.0;
+	NOM: Toboggan;
+	X: 697.0;
+	Y: 287.0;
+	SIZE_X: 150.0;
+	SIZE_Y: 35.0;
+	SUCC: [(NEXT: Ice Cream | SRC_P_ID: 1 | DEST_P_ID: 0 | ARC_TYPE: COURBE | V1: 918.0 - 234.0 | V2: 945.0 - 275.0)];
+}
+{
+	TYPE: SORTIE;
+	DELAI: 10.0;
+	ECART_TEMP: 2.0;
+	NOM: Ice Cream;
+	X: 1016.0;
+	Y: 217.0;
+	SIZE_X: 150.0;
+	SIZE_Y: 35.0;
+	SUCC: [];
+}
