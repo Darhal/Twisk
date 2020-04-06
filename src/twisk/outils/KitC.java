@@ -46,7 +46,6 @@ public class KitC {
                 Path newdir = Paths.get("/tmp/twisk/");
                 Files.copy(source, newdir.resolve(source.getFileName()), REPLACE_EXISTING);*/
                 InputStream source = getClass().getClassLoader().getResourceAsStream("codeC/"+nom);
-                System.out.println(source.toString());
                 File destination = new File("/tmp/twisk/"+nom);
                 copier(source, destination);
             }
